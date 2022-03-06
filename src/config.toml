@@ -1,3 +1,55 @@
-baseURL = 'http://example.org/'
+baseURL = "http://www.priyakdey.com"
+defaultContentLanguage = "en-us"
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Priyak Dey"
+theme = "gokarna"
+
+themeMode = "dark"
+
+enableEmoji = true
+
+
+enableRobotsTXT = true                                      # Automatically generate robots.txt
+
+pygmentsStyle = "monokai"                                   # color scheme for the codeblocks. options - https://xyproto.github.io/splash/docs/all.html
+
+[menu]
+  [[menu.main]]
+    identifier = "home"                                     # Unique identifer for a menu item
+    url        = "/"                                        # url
+    name       = "Home"                                     # Display name
+    weight     = 1                                          # Weights are used to determine the ordering
+
+
+  [[menu.main]]
+    identifier = "posts"                                    # Unique identifer for a menu item
+    url        = "/posts/"                                  # url
+    name       = "Posts"                                    # Display name
+    weight     = 2                                          # Weights are used to determine the ordering
+
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags/"
+    weight     = 3
+
+
+
+[params]
+  avatarURL  = "https://avatars.githubusercontent.com/priyakdey"
+  avatarSize = "size-m"
+  description = "A few words from a dumb engineer"
+  footer = "Priyak Dey"
+  accentColor = "#606060"                                   # Accent color is displayed when you hover over <a> tags
+  showPostsOnHomePage = "recent"
+  customHeadHTMl = '''
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  '''
+
+  socialIcons = [
+      {name = "github",        url = "https://github.com/priyakdey"},
+      {name = "linkedin",      url = "https://www.linkedin.com/in/priyakdey"},
+      {name = "twitter",       url = "https://twitter.com/DeyPriyak"},
+      {name = "stackoverflow", url = "https://stackoverflow.com/users/10368507/priyak-dey?tab=profile"},
+      {name = "instagram",     url = "https://www.instagram.com/priyak_dey/"}
+    ]
