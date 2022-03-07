@@ -33,6 +33,17 @@ pygmentsStyle = "monokai"                                   # color scheme for t
     url        = "/tags/"
     weight     = 3
 
+  [[menu.main]]
+    identifier = "about-me"
+    name       = "About Me"
+    url        = "/page/about-me"
+    weight     = 4
+
+  [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "http://google.com"
+    weight     = 5
 
 
 [params]
