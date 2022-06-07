@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Priyak Dey</title>
-    <link>http://www.priyakdey.com/</link>
+    <link>https://priyakdey.github.io/</link>
     <description>Recent content on Priyak Dey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www.priyakdey.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://priyakdey.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://www.priyakdey.com/page/about-me/</link>
+      <link>https://priyakdey.github.io/page/about-me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.priyakdey.com/page/about-me/</guid>
+      <guid>https://priyakdey.github.io/page/about-me/</guid>
       <description>Man, this is hard !!!! I need to actually introspect !!! Give it sometime !!</description>
     </item>
     
     <item>
       <title>Content Coming soon !!!!</title>
-      <link>http://www.priyakdey.com/page/no-posts-found/</link>
+      <link>https://priyakdey.github.io/page/no-posts-found/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.priyakdey.com/page/no-posts-found/</guid>
+      <guid>https://priyakdey.github.io/page/no-posts-found/</guid>
       <description>Thanks for waiting !!!!</description>
     </item>
     
