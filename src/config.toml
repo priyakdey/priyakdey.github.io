@@ -48,7 +48,7 @@ pygmentsStyle = "monokai"                                   # color scheme for t
 
 
 [params]
-  avatarURL  = "https://avatars.githubusercontent.com/priyakdey"
+  avatarURL  = "/images/priyakdey.jpg"
   avatarSize = "size-m"
   description = "A few words from a dumb engineer"
   footer = "Priyak Dey"
