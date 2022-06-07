@@ -43,12 +43,12 @@ pygmentsStyle = "monokai"                                   # color scheme for t
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "http://google.com"
+    url        = "https://raw.githubusercontent.com/priyakdey/priyakdey.github.io/main/src/static/PriyakDey-7-SoftwareEngineer.pdf"
     weight     = 5
 
 
 [params]
-  avatarURL  = "https://avatars.githubusercontent.com/priyakdey"
+  avatarURL  = "https://avatars.githubusercontent.com/u/35918976?v=4"
   avatarSize = "size-m"
   description = "A few words from a dumb engineer"
   footer = "Priyak Dey"
