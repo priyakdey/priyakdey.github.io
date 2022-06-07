@@ -23,7 +23,8 @@ pygmentsStyle = "monokai"                                   # color scheme for t
 
   [[menu.main]]
     identifier = "posts"                                    # Unique identifer for a menu item
-    url        = "/posts/"                                  # url
+    # url        = "/posts"     
+    url        = "/page/no-posts-found"                     # url   # TODO: once contents are up, change this to /posts
     name       = "Posts"                                    # Display name
     weight     = 2                                          # Weights are used to determine the ordering
 
