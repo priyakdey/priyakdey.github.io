@@ -43,7 +43,7 @@ pygmentsStyle = "monokai"                                   # color scheme for t
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "http://google.com"
+    url        = "https://raw.githubusercontent.com/priyakdey/priyakdey.github.io/main/src/static/PriyakDey-7-SoftwareEngineer.pdf"
     weight     = 5
 
 
