@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #606060;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Churning objects from a Factory</title>
+    <meta name="description" content="Using factory and strategy design patterns with Springboot">
+    <meta name="keywords" content='design patterns, creational design pattern, factory design pattern, java, springboot'>
+
+    <meta property="og:url" content="https://priyakdey.github.io/posts/factory-design/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Churning objects from a Factory">
+    <meta property="og:description" content="Using factory and strategy design patterns with Springboot">
+    <meta property="og:image" content="/images/priyakdey.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Churning objects from a Factory">
+    <meta name="twitter:description" content="Using factory and strategy design patterns with Springboot">
+    <meta property="twitter:domain" content="https://priyakdey.github.io/posts/factory-design/">
+    <meta property="twitter:url" content="https://priyakdey.github.io/posts/factory-design/">
+    <meta name="twitter:image" content="/images/priyakdey.jpg">
+
+    
+    <link rel="canonical" href="https://priyakdey.github.io/posts/factory-design/" />
+
+    <link rel="stylesheet" type="text/css" href="https://priyakdey.github.io//css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://priyakdey.github.io//css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://priyakdey.github.io//css/dark.css">
+
+    <script src="https://priyakdey.github.io//js/svg-injector.min.js"></script>
+    <script src="https://priyakdey.github.io//js/feather-icons.min.js"></script>
+    <script src="https://priyakdey.github.io//js/main.js"></script>
+
+    
+    
+        <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://priyakdey.github.io/">
+                <img src="https://priyakdey.github.io//images/priyakdey.jpg" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://priyakdey.github.io/">Priyak Dey</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://priyakdey.github.io/"> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://priyakdey.github.io/page/no-posts-found"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://priyakdey.github.io/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://priyakdey.github.io/page/about-me"> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://raw.githubusercontent.com/priyakdey/priyakdey.github.io/main/src/static/PriyakDey-7-SoftwareEngineer.pdf"> Resume </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://priyakdey.github.io/"> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://priyakdey.github.io/page/no-posts-found"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://priyakdey.github.io/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://priyakdey.github.io/page/about-me"> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://raw.githubusercontent.com/priyakdey/priyakdey.github.io/main/src/static/PriyakDey-7-SoftwareEngineer.pdf"> Resume </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Churning objects from a Factory</h1>
+        <small role="doc-subtitle">Using factory and strategy design patterns with Springboot</small>
+        <p class="post-date">
+            September 13, 2022
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://priyakdey.github.io/tags/design-patterns">design patterns</a></li>
+        
+            <li class="post-tag"><a href="https://priyakdey.github.io/tags/creational-design-pattern">creational design pattern</a></li>
+        
+            <li class="post-tag"><a href="https://priyakdey.github.io/tags/factory-design-pattern">factory design pattern</a></li>
+        
+            <li class="post-tag"><a href="https://priyakdey.github.io/tags/java">java</a></li>
+        
+            <li class="post-tag"><a href="https://priyakdey.github.io/tags/springboot">springboot</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <blockquote>
+<p>The Factory pattern provides a way to use an instance as a object factory.
+The factory can return an instance of one of several possible classes (in a
+subclass hierarchy), depending on the data provided to it.</p>
+</blockquote>
+<p>The factory design pattern is mostly used when we cannot anticipate which object type
+to be instantiated during runtime. The type required during runtime would mostly depend
+on one or more parameters.</p>
+<p>When we talk about <em><code>return an instance of one of several possible classes</code></em>, we are 
+talking about the <strong>same type</strong> (hierarchy exits). If one factory is used to return multiple types,
+then we would be breaking the <a href="https://java-design-patterns.com/principles/#single-responsibility-principle">SRP</a> 
+and <a href="https://java-design-patterns.com/principles/#openclosed-principle">OCP</a>.</p>
+<p>I came across a similar situation where our service was exposed to different types of clients (UI, internal backend systems, 
+external backend systems).
+Different clients had to be validated with a differnent <strong>strategy</strong>.
+Example if requests lands from UI, we are expecting to authorize the user validaity using an org-wide entitlement-service;
+calls coming from the internet are to be validated using some metadata in the http headers.</p>
+<p>So we decided to figure out our client type using HttpHeaders. 
+The client needs to send their Application Id in the header as APP_ID.<br>
+Depending on the flow we can easily do the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isAuthorized</span><span style="color:#f92672">(</span>HttpServletRequest request<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    String appId <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;APP_ID&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#75715e">// appId != null and appId is supported is already done
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;CLIENT1&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>appId<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">// invoke client1 validation flow
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;CLIENT2&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>appId<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">// invoke client2 validation flow   
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">// some other things maybe and then return
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</code></pre></div><p>Though this looks intuitive, a big issue is supporting different clients as the application
+grows old. We gotta keep coming back to this class, opening this method and modifying it.
+So we have to come up with a solution which is more extensible.</p>
+<p>A combination <strong>Factory and Strategy</strong> design comes to our rescue.</p>
+<blockquote>
+<p>Use strategy when you need to define a family of algorithms, encapsulate
+each one, and make them interchangeable. Strategy lets the algorithm vary
+independently from clients that use it.</p>
+</blockquote>
+<p>To explain this using a real-word example, lets take the below example.
+We are a logistics company are given the task of creating a 
+application which helps process order details.</p>
+<p>As the company scaled, they supported on-road, shipping, by-air and other ways 
+of transporting goods. Different clients books orders with us and depending on the
+type, we have different systems handling the orders.
+EOD all systems push order details DataLake for archivals and future insights.
+Over the years different LOB came up and different systems are build differently and export
+data in a different format.</p>
+<p>Our task is to create an application which accepts data(any format - csv/xml/json/excel, etc).
+Even for JSON we are assuming we are expecting a json file instead of an API call for bulk uploads.</p>
+<p>We have created a api <code>/api/v1/orders/upload</code> to accept the file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@PostMapping</span>
+<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>Void<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">uploadFile</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;file&#34;</span><span style="color:#f92672">)</span> MultipartFile file<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>file<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> BadRequestException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Empty file cannot be processed&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">// this is something we can do
+</span><span style="color:#75715e"></span>    String fileType <span style="color:#f92672">=</span> getFileType<span style="color:#f92672">(</span>file<span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;csv&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>fileType<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">// create a CSVParser and process data
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;xml&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>fileType<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">// create a XMLParser and process data
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>The issue here is what we discussed before, for supporting different types, we need to open the class and modify.
+Also the controller which should have just handed the request, is now also resposible for creating the Parsers and
+managing its lifecyle.</p>
+<p>Yes, we can extract this to a service and let service handle the creation and the decision making. Yet our
+decision making is just a bunch of if-else, which other than looking ugly is breaking OCP.</p>
+<p>Here is where a combination of strategy and factory comes to our rescue.</p>
+<p>If you think a little, how we parse the file is just a strategy(depending on the format of the data we parse the file
+using a different algorithm - for csv we split on commas, for xml we can build a tree of tags).</p>
+<p>So the first thing we can do is create an abstraction called <code>FileProcessor</code> which exposes and API to parse and process
+the file. It takes in a file and returns a list of <code>Order</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">FileProcessor</span> <span style="color:#f92672">{</span>
+    List<span style="color:#f92672">&lt;</span>Order<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">processFile</span><span style="color:#f92672">(</span>File file<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception<span style="color:#f92672">;</span>        <span style="color:#75715e">// Takes in a file and sends us back the List of orders
+</span><span style="color:#75715e"></span>
+    FileType <span style="color:#a6e22e">getType</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Now that we created this abstraction, lets define some concrete types.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CSVFileProcessorImpl</span> <span style="color:#66d9ef">implements</span> FileProcessor <span style="color:#f92672">{</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>Order<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">processFile</span><span style="color:#f92672">(</span>File file<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+        log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Processing file {}&#34;</span><span style="color:#f92672">,</span> file<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+        Parser parser <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CSVParser<span style="color:#f92672">();</span>
+        List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">[]&gt;</span> parsedContent <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>file<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">return</span> parsedContent<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">::</span>mapToBean<span style="color:#f92672">).</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>toList<span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> FileType <span style="color:#a6e22e">getType</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> CSV<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">private</span> Order <span style="color:#a6e22e">mapToBean</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> arr<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Order order <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Order<span style="color:#f92672">();</span>
+        order<span style="color:#f92672">.</span><span style="color:#a6e22e">setInvoiceId</span><span style="color:#f92672">(</span>arr<span style="color:#f92672">[</span>0<span style="color:#f92672">]);</span>
+        order<span style="color:#f92672">.</span><span style="color:#a6e22e">setAmount</span><span style="color:#f92672">(</span>BigDecimal<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>Double<span style="color:#f92672">.</span><span style="color:#a6e22e">parseDouble</span><span style="color:#f92672">(</span>arr<span style="color:#f92672">[</span>1<span style="color:#f92672">])));</span>
+        DateTimeFormatter formatter <span style="color:#f92672">=</span> DateTimeFormatter<span style="color:#f92672">.</span><span style="color:#a6e22e">ofPattern</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%MM/%dd%yyyy&#34;</span><span style="color:#f92672">);</span>
+        order<span style="color:#f92672">.</span><span style="color:#a6e22e">setInvoiceDate</span><span style="color:#f92672">(</span>LocalDate<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>arr<span style="color:#f92672">[</span>2<span style="color:#f92672">],</span> formatter<span style="color:#f92672">));</span>
+        order<span style="color:#f92672">.</span><span style="color:#a6e22e">setCompany</span><span style="color:#f92672">(</span>arr<span style="color:#f92672">[</span>3<span style="color:#f92672">]);</span>
+        <span style="color:#66d9ef">return</span> order<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><p>We not only created sub-classes of <code>FileProcessor</code>, we have also delegated the
+creation and managing the Parser to its  subclass.
+This decouples our service <code>OrderProcessorServiceImpl</code> from managing the lifecyle of the <code>Parser</code>.</p>
+<p>Now we have defined different strategies to parse the file, this becomes easy to support 
+different types in the future. But the main issue still remains;</p>
+<p>We are expecing the service to decide which <code>FileProcessor</code> to instantiate and use.
+This is where the <code>FileProcessorFactory</code> comes handy, which decouples this creation
+and decision from the client.</p>
+<p>Looking at the <code>FileProcessorFactory</code> class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Slf4j</span>
+<span style="color:#a6e22e">@Component</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FileProcessorFactory</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>FileType<span style="color:#f92672">,</span> FileProcessor<span style="color:#f92672">&gt;</span> fileProcessorMap<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">FileProcessorFactory</span><span style="color:#f92672">(</span>Set<span style="color:#f92672">&lt;</span>FileProcessor<span style="color:#f92672">&gt;</span> fileProcessors<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        fileProcessorMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+        fileProcessors<span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span><span style="color:#f92672">(</span>fileProcessor <span style="color:#f92672">-&gt;</span> fileProcessorMap<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>fileProcessor<span style="color:#f92672">.</span><span style="color:#a6e22e">getType</span><span style="color:#f92672">(),</span> fileProcessor<span style="color:#f92672">));</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> FileProcessor <span style="color:#a6e22e">getProcessor</span><span style="color:#f92672">(</span>String contentType<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        FileType fileType <span style="color:#f92672">=</span> FileType<span style="color:#f92672">.</span><span style="color:#a6e22e">getFileType</span><span style="color:#f92672">(</span>contentType<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>fileType <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> UnsupportedFileFormatException<span style="color:#f92672">(</span>
+                    contentType <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;is not supported yet. Only csv, xml and excel is supported&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> fileProcessorMap<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>fileType<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span>
+</code></pre></div><p>It is a spring managed bean, which when instantiates does keep a copy of all the <code>FileProcessor</code> in a map,
+the key being an enum <code>FileType</code>.
+This helps the <code>getProcessor(String contentType)</code> method accept a file format type and return the correct processor.
+This pattern though a little complex than if-else becomes more extensible.</p>
+<p>Let us say, we want to support a FixedWidth flat file in 6 months, all we need to do is create a new <code>FileProcessor</code>,
+a new <code>Parser</code> and add the new supported type in the <code>FileType</code> enum.
+This would also mean, we dont touch the existing classes to modify, which means what was working still works
+without any issue.</p>
+<p>The UML digram of the application gives a better picture of the design.</p>
+<p><img src="https://raw.githubusercontent.com/priyakdey/design-pattern-usage-java/factory-design/order-details-processing-service-uml.jpg" alt="UML Diagram"></p>
+<p><strong>Note</strong>: There are couple of code smells - Parsers are being created multiple times when we can allow Spring create and manage 
+the lifecyle of the parsers. I think an Abstract Factory can be used for more decoupling. But keeping things simple for this use case.</p>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://github.com/priyakdey/design-pattern-usage-java/tree/factory-design">codebase link</a></li>
+<li><a href="https://java-dedesign-patterns.com/">java-design-patterns.com</a></li>
+<li><a href="https://www.youtube.com/watch?v=v9ejT8FO-7I&amp;list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc">Christopher Okhravi Design Pattern playlist</a></li>
+<li><a href="https://www.youtube.com/watch?v=mE3qTp1TEbg&amp;list=PLlsmxlJgn1HJpa28yHzkBmUY-Ty71ZUGc">Geekific Design Pattern playlist</a></li>
+</ul>
+
+        </p>
+    </div>
+    <div id="disqus-thread">
+        <script>
+            (function() {
+                    var d = document.createElement('script');
+                    s.src = 'https://https-priyakdey-com-1.disqus.com/embed.js';
+                    s.setAttribute('date-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                }
+            )();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2022 Priyak Dey</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

@@ -5,7 +5,18 @@
     <link>https://priyakdey.github.io/</link>
     <description>Recent content on Priyak Dey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://priyakdey.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 23:09:57 +0530</lastBuildDate><atom:link href="https://priyakdey.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Churning objects from a Factory</title>
+      <link>https://priyakdey.github.io/posts/factory-design/</link>
+      <pubDate>Tue, 13 Sep 2022 23:09:57 +0530</pubDate>
+      
+      <guid>https://priyakdey.github.io/posts/factory-design/</guid>
+      <description>The Factory pattern provides a way to use an instance as a object factory. The factory can return an instance of one of several possible classes (in a subclass hierarchy), depending on the data provided to it.
+ The factory design pattern is mostly used when we cannot anticipate which object type to be instantiated during runtime. The type required during runtime would mostly depend on one or more parameters.</description>
+    </item>
+    
     <item>
       <title>About Me</title>
       <link>https://priyakdey.github.io/page/about-me/</link>

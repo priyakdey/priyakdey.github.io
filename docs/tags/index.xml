@@ -5,6 +5,52 @@
     <link>https://priyakdey.github.io/tags/</link>
     <description>Recent content in Tags on Priyak Dey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://priyakdey.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 23:09:57 +0530</lastBuildDate><atom:link href="https://priyakdey.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>creational design pattern</title>
+      <link>https://priyakdey.github.io/tags/creational-design-pattern/</link>
+      <pubDate>Tue, 13 Sep 2022 23:09:57 +0530</pubDate>
+      
+      <guid>https://priyakdey.github.io/tags/creational-design-pattern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design patterns</title>
+      <link>https://priyakdey.github.io/tags/design-patterns/</link>
+      <pubDate>Tue, 13 Sep 2022 23:09:57 +0530</pubDate>
+      
+      <guid>https://priyakdey.github.io/tags/design-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>factory design pattern</title>
+      <link>https://priyakdey.github.io/tags/factory-design-pattern/</link>
+      <pubDate>Tue, 13 Sep 2022 23:09:57 +0530</pubDate>
+      
+      <guid>https://priyakdey.github.io/tags/factory-design-pattern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://priyakdey.github.io/tags/java/</link>
+      <pubDate>Tue, 13 Sep 2022 23:09:57 +0530</pubDate>
+      
+      <guid>https://priyakdey.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>springboot</title>
+      <link>https://priyakdey.github.io/tags/springboot/</link>
+      <pubDate>Tue, 13 Sep 2022 23:09:57 +0530</pubDate>
+      
+      <guid>https://priyakdey.github.io/tags/springboot/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

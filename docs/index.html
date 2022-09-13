@@ -96,12 +96,14 @@
 
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
                 <a>
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
                 <a>
                     <span data-feather="menu"></span>
                 </a>
@@ -131,6 +133,7 @@
                 </li>
                 
                 <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
                     <a>
                         <span id="theme-toggle-icon" data-feather="moon"></span>
                     </a>
@@ -144,7 +147,7 @@
 <section class="home-about">
 	<div class="avatar">
         
-        <img class=size-m src='https://priyakdey.github.io//images/priyakdey.jpg'>
+        <img class=size-m src='https://priyakdey.github.io//images/priyakdey.jpg' alt="avatar" />
         
 	</div>
     <h1>Priyak Dey</h1>
@@ -193,16 +196,23 @@
 
 
 
+
+
+
     <div class="home-posts list-posts">
         <h2>Recent Posts</h2>
 
     
 
     
-        
+        <article class="post-title">
+    <a href="https://priyakdey.github.io/posts/factory-design/" class="post-link">Churning objects from a Factory</a>
+    <div class="flex-break"></div>
+    <span class="post-date">September 13, 2022</span>
+</article>
+
     
     </div>
-
 
 
 
