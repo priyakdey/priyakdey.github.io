@@ -19,6 +19,9 @@ showLikes: false
 
 ---
 
-[Click here]() to download a copy.
+[Click here](https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-7-SoftwareEngineer.pdf) to download.
 
-<embed src="PriyakDey-7-SoftwareEngineer.pdf" width="500" height="375">
+
+
+![resume-page-1](resume-page1.png)
+![resume-page-2](resume-page2.png)
