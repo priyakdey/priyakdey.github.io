@@ -16,12 +16,129 @@ sharingLinks : false
 showEdit: false
 showViews: false
 showLikes: false
-
+scrollToTop: true
 ---
 
-[Click here](https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-7-SoftwareEngineer.pdf) to download.
+
+## Experience
+
+<table class="resume-table">
+    <thead class="experience-company-headers">
+        <tr>
+            <th>Company</th>
+            <th>Designation</th>
+            <th>Dates</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Morgan Stanley</td>
+            <td>Manager</td>
+            <td class="resume-dates">Jun, 2021 - Present</td>
+            <td>Bangalore, India</td>
+        </tr>
+        <tr>
+            <td>Publicis Sapient</td>
+            <td>Senior Associate L1</td>
+            <td class="resume-dates">May, 2020 - Jun, 2021</td>
+            <td>Bangalore, India</td>
+        </tr>
+        <tr>
+            <td>Tech Mahindra</td>
+            <td>Senior Software Engineer</td>
+            <td class="resume-dates">Apr, 2019 - Sep, 2019</td>
+            <td>Pune, India</td>
+        </tr>
+        <tr>
+            <td rowspan=4>Infosys Limited</td>
+            <td>Technology Analyst</td>
+            <td class="resume-dates">Jan, 2019 - Apr, 2019</td>
+            <td rowspan=4>Pune, India</td>
+        </tr>
+        <tr>
+            <td>Senior System Engineer</td>
+            <td class="resume-dates">Jul, 2016 - Dec, 2018</td>
+        </tr>
+        <tr>
+            <td>System Engineer</td>
+            <td class="resume-dates">Jul, 2015 - Jun, 2016</td>
+        </tr>
+        <tr>
+            <td>System Engineer Trainee</td>
+            <td class="resume-dates">Jan, 2015 - Jun, 2015</td>
+        </tr>
+    </tbody>
+<table>
 
 
+## Technical Skills
 
-![resume-page-1](resume-page1.png)
-![resume-page-2](resume-page2.png)
+<div class="technical-skills-container">
+    <p>Java</p>
+    <p>SpringBoot</p>
+    <p>SpringCloud</p>
+    <p>Spring Batch</p>
+    <p>JPA</p>
+    <p>Microservice</p>
+    <p>Python</p>
+    <p>SQL Server</p>
+    <p>SSIS</p>
+    <p>Bash</p>
+    <p>Docker</p>
+    <p>Jenkins</p>
+    <p>DevOps</p>
+</div>
+
+
+## Education
+
+<table class="resume-table">
+    <thead class="education-headers">
+        <tr>
+            <th>University/School</th>
+            <th>Degree</th>
+            <th>Date</th>
+            <th>CGPA/Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Techno India College Of Technology <br> <i>(West Bengal University of Technology)</i>
+            </td>
+            <td>B.Tech in Electronics and Communications</td>
+            <td class="resume-dates">2014</td>
+            <td>8.5</td>
+        </tr>
+        <tr>
+            <td>Julien Day School</td>
+            <td>ISC</td>
+            <td class="resume-dates">2010</td>
+            <td>91.0%</td>
+        </tr>
+        <tr>
+            <td>Julien Day School</td>
+            <td>ICSE</td>
+            <td class="resume-dates">2008</td>
+            <td>93.8%</td>
+        </tr>
+    </tbody>
+<table>
+
+## Certifications
+<div 
+    data-iframe-width="150" 
+    data-iframe-height="270" 
+    data-share-badge-id="77d9dc85-6e41-43a7-84ba-aedaa2dc4daa" 
+    data-share-badge-host="https://www.credly.com">
+</div>
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+
+## Soft Copy
+
+<div>
+    <a class="download-resume-btn" href="https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-7-SoftwareEngineer.pdf" target="_blank">Download</a>
+</div> 
+
