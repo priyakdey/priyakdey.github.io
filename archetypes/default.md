@@ -3,6 +3,12 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 
+description: ""
+summary: ""
+tags: []
+#externalUrl: ""
+
+showSummary : false
 showDate : false
 showDateUpdated : false
 showHeadingAnchors : false
@@ -11,7 +17,6 @@ showReadingTime : false
 showTableOfContents : true
 showTaxonomies : false 
 showWordCount : false
-showSummary : false
 sharingLinks : false
 showEdit: false
 showViews: false

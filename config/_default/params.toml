@@ -37,8 +37,8 @@ mainSections = ["posts"]
   showAuthor = true
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = true
-  # editURL = "https://github.com/username/repo/"
+  # showEdit = true
+  # editURL = "https://github.com/priyakdey/priyakdey.github.io/tree/main/content"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
@@ -58,7 +58,7 @@ mainSections = ["posts"]
   groupByYear = true
 
 [sitemap]
-  excludedKinds = []
+  excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
   showTermCount = true
