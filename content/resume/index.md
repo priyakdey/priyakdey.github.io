@@ -183,16 +183,5 @@ scrollToTop: true
 
 ## Download Resume
 
-{{<dwnld_resume>}}
+{{<download_resume>}}
 
-
-
-<!-- <div>
-    <a 
-        class="download-resume-btn" 
-        href="https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-7-SoftwareEngineer.pdf" 
-        target="_blank"
-    >
-        Download
-    </a>
-</div>  -->
