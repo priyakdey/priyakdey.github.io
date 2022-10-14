@@ -14,6 +14,26 @@
     font-style: italic;
 }
 
+.technical-skills-container {
+    display: inline;
+}
+
+.technical-skills-container-inner {
+    margin: 18px;
+    width: 100%;
+}
+
+.technical-skill-span {
+    margin: 5px;
+    padding: 10px;
+    color: #CBD5E1;
+}
+
+.technical-skill-span:hover {
+    zoom: 110%;
+}
+
+
 .download-resume-btn {
     background-color: transparent;
     background-image: none;

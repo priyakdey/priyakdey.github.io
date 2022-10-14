@@ -75,19 +75,54 @@ scrollToTop: true
 ## Technical Skills
 
 <div class="technical-skills-container">
-    <p>Java</p>
-    <p>SpringBoot</p>
-    <p>SpringCloud</p>
-    <p>Spring Batch</p>
-    <p>JPA</p>
-    <p>Microservice</p>
-    <p>Python</p>
-    <p>SQL Server</p>
-    <p>SSIS</p>
-    <p>Bash</p>
-    <p>Docker</p>
-    <p>Jenkins</p>
-    <p>DevOps</p>
+    <div class="technical-skills-container-inner">
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Java
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Spring
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            SpringBoot
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Spring Cloud
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Spring Batch
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            JPA
+        </span>
+    </div>
+    <div class="technical-skills-container-inner">
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Microservices
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Python
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            SSIS
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Docker
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Linux/Bash
+        </span>
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            SQL Server
+        </span>
+    </div>
+    <div class="technical-skills-container-inner">
+        <span class="technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            Jenkins
+        </span>
+        <span class="technical-skill-span technical-skill-span rounded-md border border-primary-400 px-1 py-[1px] text-sm font-normal text-primary-700 dark:border-primary-600 ">
+            DevOps
+        </span>
+    </div>
 </div>
 
 
