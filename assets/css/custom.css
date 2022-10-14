@@ -1,12 +1,4 @@
-.experience-company-headers {
-    text-align: left;
-}
-
-.education-headers {
-    text-align: left;
-}
-
-.certification-headers {
+.resume-table {
     text-align: left;
 }
 
@@ -24,7 +16,7 @@
 }
 
 .technical-skill-span {
-    margin: 5px;
+    margin: 4px;
     padding: 10px;
     color: #CBD5E1;
 }
@@ -32,7 +24,6 @@
 .technical-skill-span:hover {
     zoom: 110%;
 }
-
 
 .download-resume-btn {
     background-color: transparent;

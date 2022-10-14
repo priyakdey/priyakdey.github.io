@@ -23,7 +23,7 @@ scrollToTop: true
 ## Experience
 
 <table class="resume-table">
-    <thead class="experience-company-headers">
+    <thead>
         <tr>
             <th>Company</th>
             <th>Designation</th>
@@ -72,7 +72,11 @@ scrollToTop: true
 <table>
 
 
+---
+
 ## Technical Skills
+
+<!-- the span css has been copied from the `Tags` styles -->
 
 <div class="technical-skills-container">
     <div class="technical-skills-container-inner">
@@ -125,11 +129,12 @@ scrollToTop: true
     </div>
 </div>
 
+---
 
 ## Education
 
 <table class="resume-table">
-    <thead class="education-headers">
+    <thead>
         <tr>
             <th>University/School</th>
             <th>Degree</th>
@@ -161,19 +166,33 @@ scrollToTop: true
     </tbody>
 <table>
 
+---
+
 ## Certifications
+
 <div 
     data-iframe-width="150" 
     data-iframe-height="270" 
     data-share-badge-id="77d9dc85-6e41-43a7-84ba-aedaa2dc4daa" 
     data-share-badge-host="https://www.credly.com">
 </div>
-<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<script defer type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+---
+
+## Download Resume
+
+{{<dwnld_resume>}}
 
 
-## Soft Copy
 
-<div>
-    <a class="download-resume-btn" href="https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-7-SoftwareEngineer.pdf" target="_blank">Download</a>
-</div> 
-
+<!-- <div>
+    <a 
+        class="download-resume-btn" 
+        href="https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-7-SoftwareEngineer.pdf" 
+        target="_blank"
+    >
+        Download
+    </a>
+</div>  -->
