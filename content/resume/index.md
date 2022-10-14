@@ -1,7 +1,7 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
+title: "Resume"
+date: 2022-10-14T12:49:57+05:30
+draft: false
 
 showDate : false
 showDateUpdated : false
@@ -18,3 +18,7 @@ showViews: false
 showLikes: false
 
 ---
+
+[Click here]() to download a copy.
+
+<embed src="PriyakDey-7-SoftwareEngineer.pdf" width="500" height="375">
