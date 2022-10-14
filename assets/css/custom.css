@@ -26,6 +26,8 @@
 }
 
 .download-resume-btn {
+    width: 100px;
+    margin: 5px;
     background-color: transparent;
     background-image: none;
     border-top: 1px solid #96d1f8;

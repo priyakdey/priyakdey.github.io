@@ -139,7 +139,6 @@ scrollToTop: true
             <th>University/School</th>
             <th>Degree</th>
             <th>Date</th>
-            <th>CGPA/Percentage</th>
         </tr>
     </thead>
     <tbody>
@@ -149,19 +148,16 @@ scrollToTop: true
             </td>
             <td>B.Tech in Electronics and Communications</td>
             <td class="resume-dates">2014</td>
-            <td>8.5</td>
         </tr>
         <tr>
             <td>Julien Day School</td>
             <td>ISC</td>
             <td class="resume-dates">2010</td>
-            <td>91.0%</td>
         </tr>
         <tr>
             <td>Julien Day School</td>
             <td>ICSE</td>
             <td class="resume-dates">2008</td>
-            <td>93.8%</td>
         </tr>
     </tbody>
 <table>
@@ -181,7 +177,7 @@ scrollToTop: true
 
 ---
 
-## Download Resume
+## Get PDF Format
 
 {{<download_resume>}}
 

@@ -1,10 +1,12 @@
+const proxyURL = "https://cors-anywhere-priyakdey-fork.herokuapp.com/";
+const blobURL  = "https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-SoftwareEngineer.pdf";
+    
+
 // Function to download the resume
 function downloadResume() {
     // Ref: 
     // How to solve CORS issue: https://stackoverflow.com/a/43881141/10368507
     // Easiet Proxy Setup: https://github.com/Rob--W/cors-anywhere/ 
-    const proxyURL = "https://cors-anywhere-priyakdey-fork.herokuapp.com/";
-    const blobURL  = "https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-SoftwareEngineer.pdf";
     const downloadFileAs = "PriyakDey-SoftwareEngineer.pdf";
 
     const url = proxyURL + blobURL;
@@ -28,4 +30,9 @@ function downloadResume() {
         anchor.click();
     })
     .catch(err => console.error(err))
+}
+
+// Function to open the link in a new tab
+function viewPDF() {
+    window.open(blobURL, "_blank");
 }
