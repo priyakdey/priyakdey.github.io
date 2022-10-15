@@ -23,7 +23,7 @@ mainSections = ["posts"]
 
 [homepage]
   layout = "profile"       # valid options: page, profile, hero, card, custom
-  # homepageImage = "img/priyakdey.jpg" # used in: hero, and card
+  # homepageImage = "img/priyakdey.png" # used in: hero, and card
   showRecent = true
   showRecentItems = 10
   showMoreLink = true
@@ -31,16 +31,16 @@ mainSections = ["posts"]
 
 [article]
   showDate = true
-  #showViews = true
-  #showLikes = true
+  showViews = false
+  showLikes = false
   showDateUpdated = false
   showAuthor = true
   showBreadcrumbs = true
   showDraftLabel = true
-  #showEdit = true
+  showEdit = false
   #editURL = "https://github.com/priyakdey/priyakdey.github.io/tree/main/content"
   #editAppendPath = true
-  showHeadingAnchors = true
+  showHeadingAnchors = false
   showPagination = true
   invertPagination = false
   showReadingTime = false
