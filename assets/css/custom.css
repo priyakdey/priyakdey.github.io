@@ -6,10 +6,107 @@
     font-style: italic;
 }
 
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+
+Ref: https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/#:~:text=320px%20%E2%80%94%20480px%3A%20Mobile%20devices,%E2%80%94%201200px%3A%20Desktops%2C%20large%20screens
+*/
+
 .technical-skills-container {
     display: inline;
 }
 
+.technical-skill-span {
+    color: #CBD5E1;
+}
+
+
+/* For any devices in landscape mode */
+@media only screen and (orientation: landscape) {
+
+    .technical-skills-container-inner {
+        margin: 18px;
+        width: 100%;
+    }
+
+    .technical-skill-span {
+        margin: 4px;
+        padding: 10px;
+        color: #CBD5E1;
+    }
+
+    .technical-skill-span:click {
+        zoom: 110%;
+    }
+
+}
+
+/* 320px — 480px: Mobile devices portrait */
+/* TODO: Does not work on S8+ - 360* 740. So we might need to see that */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+
+    .technical-skills-container-inner {
+        margin: 1px;
+        width: 80%;
+    }
+
+    .technical-skill-span {
+        margin: 1px;
+        padding: 2px;
+        color: #CBD5E1;
+    }
+
+    .technical-skill-span:hover {
+        zoom: 110%;
+    }
+
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) and (orientation: portrait) {
+
+    .technical-skills-container-inner {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .technical-skill-span {
+        margin: 1px;
+        padding: 2px;
+        color: #CBD5E1;
+    }
+
+    .technical-skill-span:hover {
+        zoom: 110%;
+    }
+
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media only screen and (min-device-width: 796px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+    .technical-skills-container-inner {
+        margin: 18px;
+        width: 100%;
+    }
+
+    .technical-skill-span {
+        margin: 4px;
+        padding: 10px;
+        color: #CBD5E1;
+    }
+
+    .technical-skill-span:hover {
+        zoom: 110%;
+    }
+
+}
+
+/* 
 .technical-skills-container-inner {
     margin: 18px;
     width: 100%;
@@ -23,7 +120,7 @@
 
 .technical-skill-span:hover {
     zoom: 110%;
-}
+} */
 
 .download-resume-btn {
     width: 100px;

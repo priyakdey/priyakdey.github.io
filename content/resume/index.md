@@ -166,6 +166,18 @@ scrollToTop: true
 
 ## Certifications
 
+
+<script defer type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+
+<!-- <div 
+    data-iframe-width="150" 
+    data-iframe-height="270" 
+    data-share-badge-id="77d9dc85-6e41-43a7-84ba-aedaa2dc4daa" 
+    data-share-badge-host="https://www.credly.com">
+</div> -->
+
+
 <div 
     data-iframe-width="150" 
     data-iframe-height="270" 
@@ -173,11 +185,10 @@ scrollToTop: true
     data-share-badge-host="https://www.credly.com">
 </div>
 
-<script defer type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 ---
 
-## Get PDF Format
+## Download PDF
 
 {{<download_resume>}}
 
