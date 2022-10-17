@@ -33,9 +33,15 @@ scrollToTop: true
     </thead>
     <tbody>
         <tr>
+            <td>AppDynamics</td>
+            <td>Software Engineer</td>
+            <td class="resume-dates">Oct, 2022 - Present</td>
+            <td>Bangalore, India</td>
+        </tr>
+        <tr>
             <td>Morgan Stanley</td>
             <td>Manager</td>
-            <td class="resume-dates">Jun, 2021 - Present</td>
+            <td class="resume-dates">Jun, 2021 - Oct, 2022</td>
             <td>Bangalore, India</td>
         </tr>
         <tr>
