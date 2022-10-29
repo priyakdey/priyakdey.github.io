@@ -1,6 +1,5 @@
 ---
-title: "Subscribe"
-title: "Resume"
+title: "Newsletter"
 date: 2022-10-14T12:49:57+05:30
 draft: false
 
@@ -20,4 +19,17 @@ showLikes: false
 scrollToTop: true
 ---
 
-Subscribe !!
+
+To get updates of my new posts, please subscribe to the newsletter below.
+
+<br>
+
+
+{{<subscribe>}}
+
+
+<br>
+<br>
+
+
+<u>*I hate spams; hence you will only get updates when I post a new article. No spams!!*</u>

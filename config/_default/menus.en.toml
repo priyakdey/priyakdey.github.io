@@ -39,16 +39,14 @@
   weight = 40
 
 [[main]]
-  name = "Subscribe"
-  pageRef = "subscribe"
+  name = "About"
+  pageRef = "about"
   weight = 50
 
 [[main]]
-  name = "About"
-  pageRef = "about"
+  name = "Newsletter"
+  pageRef = "newsletter"
   weight = 60
-
-
 
 
 # -- Footer Menu --

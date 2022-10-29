@@ -3,7 +3,7 @@ const blobURL  = "https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey
     
 
 // Function to download the resume
-function downloadResume() {
+function downloadResume(){
     // Ref: 
     // How to solve CORS issue: https://stackoverflow.com/a/43881141/10368507
     // Easiet Proxy Setup: https://github.com/Rob--W/cors-anywhere/ 
@@ -33,6 +33,34 @@ function downloadResume() {
 }
 
 // Function to open the link in a new tab
-function viewPDF() {
+function viewPDF(){
     window.open(blobURL, "_blank");
+}
+
+// event handler for new subscriber
+document.querySelector('form').addEventListener('submit', e => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const jsonData = jsonify(formData);
+    addNewSubscriber(jsonData);
+});
+
+
+function jsonify(data){
+    const [nameArray, emailArray] = [...data.entries()];
+    subsciberName   = nameArray[1];
+    subscriberEmail = emailArray[1];
+
+    // TODO: Do we need to validate the email !!
+
+    return {
+        "name": subsciberName,
+        "email": subscriberEmail
+    };
+}
+
+function addNewSubscriber(data){
+    // TODO: need to implement this
+    console.log("TODO")
+
 }
