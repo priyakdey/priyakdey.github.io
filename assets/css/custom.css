@@ -160,3 +160,12 @@ Ref: https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types
     border-top-color: #1b435e;
     background: #1b435e;
 }
+
+.new-subscriber-message {
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    background-color: #1E2A3B;
+    margin: 10px;
+    padding: 0px;
+}
