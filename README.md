@@ -7,7 +7,7 @@ Source code for my [personal website](https://priyakdey.com)
 - Generated using this amazing SSG [hugo](https://gohugo.io/) .
 - Hugo version: `0.92.2`
 - Go version: `1.19.1`
-- Theme used: [Blowfish](https://nunocoracao.github.io/blowfish/) version: `v1.8.0`
+- Theme used: [Blowfish](https://nunocoracao.github.io/blowfish/) version: `v2.6.1`
 - Github pages for hosting
 - Amazing [proxy](https://github.com/Rob--W/cors-anywhere/) for resolving Cross-Site issues. Using heroku for deplyment. 
 - Design is **heavily** influnced by [Nuno Coração's personal website](https://nunocoracao.com/), who is the creator and contributor of Blowfish.
