@@ -20,10 +20,6 @@ scrollToTop: true
 ---
 
 
-To get updates of my new posts, please subscribe to the newsletter below.
-
-<br>
-
 
 {{<subscribe>}}
 
@@ -32,4 +28,5 @@ To get updates of my new posts, please subscribe to the newsletter below.
 <br>
 
 
-<u>*I hate spams; hence you will only get updates when I post a new article. No spams!!*</u>
+**NOTE:**
+*You will get an email only when I post a new article*
