@@ -164,5 +164,23 @@ Ref: https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types
 .new-subscriber-message-popup {
     font-size: 15px;
     font-style: italic;
-    color: white;
+
+}
+
+.light .new-subscriber-message-popup {
+    color: rgba(0, 0, 0, 0.803);
+}
+
+.dark .new-subscriber-message-popup {
+    color: rgba(255, 255, 255, 0.878);
+}
+
+
+.text-black:focus {
+    color: rgba(0, 0, 0, 0.803);
+}
+
+.dark .subcribe-button {
+    background: #0c3855;
+    color: whitesmoke;
 }

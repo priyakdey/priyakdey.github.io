@@ -3,10 +3,10 @@ const blobUrl = "https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-
 const newSubscriberRemoteUrl = "https://new-user-subscription-az-function.azurewebsites.net/api/add-subscriber";
 const newSubscriberLocalUrl = "http://localhost:7071/api/add-subscriber";
 
-const alertMessageTimeout = 3500;
+const alertMessageTimeout = 2500;
 
 // Function to download the resume
-function downloadResume() {
+function downloadResume(){
   // Ref:
   // How to solve CORS issue: https://stackoverflow.com/a/43881141/10368507
   // Easiet Proxy Setup: https://github.com/Rob--W/cors-anywhere/
@@ -40,7 +40,7 @@ function downloadResume() {
 }
 
 // Function to open the link in a new tab
-function viewPDF() {
+function viewPDF(){
   window.open(blobUrl, "_blank");
 }
 
@@ -52,7 +52,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   addNewSubscriber(jsonData);
 });
 
-function jsonify(data) {
+function jsonify(data){
   const [nameArray, emailArray] = [...data.entries()];
   subsciberName = nameArray[1];
   subscriberEmail = emailArray[1];
@@ -63,7 +63,7 @@ function jsonify(data) {
   };
 }
 
-function addNewSubscriber(data) {
+function addNewSubscriber(data){
   let url = "";
   const hostname = window.location.hostname;
 
@@ -91,7 +91,7 @@ function addNewSubscriber(data) {
           document.getElementById("new-subscriber-message").innerText = "";
         }, alertMessageTimeout);
       } else if (statusCode === 409) {
-        document.getElementById("new-subscriber-message").innerText = "You have already subscribed!!";
+        document.getElementById("new-subscriber-message").innerText = "You have already subscribed !!";
 
         setTimeout(() => {
           document.getElementById("new-subscriber-message").innerText = "";

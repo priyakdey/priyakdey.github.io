@@ -29,4 +29,4 @@ scrollToTop: true
 
 
 **NOTE:**
-*You will get an email only when I post a new article*
+*You will get an email* <i>**only**</i> *when I post a new article*
