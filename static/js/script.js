@@ -1,9 +1,9 @@
 const proxyUrl = "https://cors-anywhere-priyakdey-fork.herokuapp.com/";
 const blobUrl = "https://priyakdeyresume.blob.core.windows.net/resume/PriyakDey-SoftwareEngineer.pdf";
-const newSubscriberUrl = "https://new-user-subscription-az-function.azurewebsites.net/api/add-subscriber";
+const newSubscriberRemoteUrl = "https://new-user-subscription-az-function.azurewebsites.net/api/add-subscriber";
 const newSubscriberLocalUrl = "http://localhost:7071/api/add-subscriber";
 
-const alertMessageTimeout = 2500;
+const alertMessageTimeout = 3500;
 
 // Function to download the resume
 function downloadResume() {
@@ -64,8 +64,14 @@ function jsonify(data) {
 }
 
 function addNewSubscriber(data) {
-  const url = newSubscriberUrl;
-  // const url = newSubscriberLocalUrl;              // TODO: we need to keep changing this for local
+  let url = "";
+  const hostname = window.location.hostname;
+
+  if (hostname.includes("localhost")) {
+    url = newSubscriberLocalUrl;
+  } else {
+    url = newSubscriberRemoteUrl;
+  }
 
   fetch(url, {
     method: "POST",
