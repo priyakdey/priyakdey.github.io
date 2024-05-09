@@ -14,10 +14,11 @@ title = "Priyak Dey"
   copyright = "&copy; Priyak Dey, _2024_"
 
 [author]
-name = "Priyak Dey"
+name = " Priyak Dey"
 image = "img/priyakdey.png"
+# headline = "Software engineer, traveler, and avid photographer, finding rhythm in the quiet corners of cafes and the bustling streets of distant cities. With each line of code, snapshot, and mile traveled, I weave stories of technology, adventure, and the human spirit. This blog is my canvas, capturing the intersections of a life lived fully—through the lens of tech and trails. Join me as we explore the world, one code commit and one step at a time, learning and growing with every new sunrise."
 headline = "Code and Wander: Journeys in Code, Camera, and the Quest for Meaning"
-bio = "Software engineer, traveler, and avid photographer, I find my rhythm in the quiet corners of cafes and the bustling streets of distant cities. With each line of code, snapshot, and mile traveled, I weave stories of technology, adventure, and the human spirit. This blog is my canvas, capturing the intersections of a life lived fully—through the lens of tech and trails. Join me as we explore the world, one code commit and one step at a time, learning and growing with every new sunrise."
+bio = "Code and Wander: Journeys in Code, Camera, and the Quest for Meaning"
 links = [
      { email = "mailto:reaching@priyakdey.com" },
      { github = "https://github.com/priyakdey/" },
