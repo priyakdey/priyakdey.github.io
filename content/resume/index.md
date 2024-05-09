@@ -19,4 +19,6 @@ showAuthor = false
 +++
 
 
-Resume
+{{< alert >}}
+_Page is under construction_
+{{< /alert >}

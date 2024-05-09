@@ -18,4 +18,6 @@ showLikes = false
 showAuthor = false
 +++
 
-Newsletter
+{{< alert >}}
+_Page is under construction_
+{{< /alert >}}
