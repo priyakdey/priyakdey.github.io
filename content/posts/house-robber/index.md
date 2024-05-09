@@ -2,7 +2,7 @@
 title = 'Unlocking Dynamic Programming with the House Robber Challenge'
 description = 'House Robber - Dynamic Programming Problem solving from leetcode'
 date = 2024-05-10T00:47:34+05:30
-draft = true
+draft = false
 categories = [ "Software Engineering" ]
 tags = [ "programming", "problem solving", "datastructure", "algorithms", "dynamic programming", "recursion", "memoization", "tabulation", "leetcode", "python", "coding", "tech" ]
 +++
@@ -11,9 +11,10 @@ tags = [ "programming", "problem solving", "datastructure", "algorithms", "dynam
 
 The [House Robber](https://leetcode.com/problems/house-robber/) problem from
 [LeetCode](https://leetcode.com) offers an excellent illustration of how dynamic
-programming can be applied to optimize solutions. In this blog post I will walk
-you through the process of understanding and solving this problem using a
-dynamic programming approach.
+programming can be applied to optimize solutions.
+
+In this blog post I will walk through my process of understanding and solving a
+problem using a dynamic programming approach, using this problem as example.
 
 ## Problem Statement
 
@@ -26,6 +27,8 @@ into on the same night**.
 Given an integer array `nums` representing the amount of money of each house,
 return the **maximum amount of money you can rob tonight without alerting the
 police**.
+
+[Link to Leetcode Problem](https://leetcode.com/problems/house-robber/)
 
 ## Breaking Down the Problem and Visualizing Solutions
 
@@ -354,6 +357,9 @@ for the maximum loot of the next possible houses.
 
 **This optimization encapsulates the essence of dynamic programming by
 minimizing both time and space complexity.**
+
+All code used above can be found in the file
+[house_robber.py](./house_robber.py)
 
 ## Conclusion
 
