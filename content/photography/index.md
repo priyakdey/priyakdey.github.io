@@ -18,4 +18,7 @@ showLikes = false
 showAuthor = false
 +++
 
-Photograhy
+
+{{< alert >}}
+_Page is under construction_
+{{< /alert >}

@@ -25,3 +25,8 @@ the human spirit. This blog is my canvas, capturing the intersections of a life
 lived fully—through the lens of tech and trails. Join me as we explore the
 world, one code commit and one step at a time, learning and growing with every
 new sunrise.
+
+
+{{< alert >}}
+_Page is under construction_
+{{< /alert >}}

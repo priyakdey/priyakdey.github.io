@@ -1,0 +1,7 @@
+- [ ] About Me Page
+- [ ] Resume Page
+- [ ] Photography Page
+- [ ] Newsletter
+- [ ] Content background, thumbnail
+- [ ] Firefox integration for likes
+- [ ] Firefox integration for comments
