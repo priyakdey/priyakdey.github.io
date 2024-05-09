@@ -16,18 +16,18 @@
   weight = 10
 
 [[main]]
-  name = "Photos"
-  pageRef = "photos"
+  name = "Photogpraphy"
+  pageRef = "photography"
   weight = 20
 
 [[main]]
   name = "About Me"
-  pageRef = "about"
+  pageRef = "about-me"
   weight = 30
 
 [[main]]
-  name = "Contact Me"
-  pageRef = "contact"
+  name = "Resume"
+  pageRef = "resume"
   weight = 40
 
 [[main]]
