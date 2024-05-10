@@ -1,5 +1,5 @@
 +++
-title = 'Unlocking Dynamic Programming with the House Robber Challenge'
+title = 'Unlocking Dynamic Programming: A Deep Dive into House Robber Challenge'
 description = 'Explore how dynamic programming can elegantly solve the House Robber problem, a popular challenge on LeetCode'
 date = 2024-05-10T00:47:34+05:30
 draft = false
