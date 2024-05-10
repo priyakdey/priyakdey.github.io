@@ -117,13 +117,13 @@ highlightCurrentMenuArea = true
   cardViewScreenWidth = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+  apiKey = "AIzaSyDJ3HX_mMED4UHQdLhFPhMlCdwSQty9p0A"
+  authDomain = "priyakdey-com.firebaseapp.com"
+  projectId = "priyakdey-com"
+  storageBucket = "priyakdey-com.appspot.com"
+  messagingSenderId = "789741389215"
+  appId = "1:789741389215:web:7a72b3187fa55e6d1469aa"
+  measurementId = "G-C99ZEG701M"
 
 [fathomAnalytics]
   # site = "ABC12345"

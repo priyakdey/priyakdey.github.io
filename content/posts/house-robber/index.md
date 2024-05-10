@@ -5,8 +5,9 @@ date = 2024-05-10T00:47:34+05:30
 draft = false
 categories = [ "Software Engineering" ]
 tags = [ "programming", "problem solving", "datastructure", "algorithms", "dynamic programming", "recursion", "memoization", "tabulation", "leetcode", "python", "coding", "tech" ]
+showViews = true
+showLikes = true
 +++
-
 
 The [House Robber](https://leetcode.com/problems/house-robber/) problem from
 [LeetCode](https://leetcode.com) offers an excellent illustration of how dynamic
@@ -370,8 +371,7 @@ efficient tabulation method with space optimization. The journey through these
 methods not only enhances our problem-solving skills but also deepens our
 understanding of dynamic programming concepts.
 
-I encourage you to apply these strategies to similar problems and share your
-experiences or questions in the comments below. Happy coding!
+I encourage you to apply these strategies to similar problems. Happy coding!
 
 ## Additional Resources
 
@@ -389,9 +389,9 @@ recommend the following resources:
 5. [neetcode.io youtube for visual problem-solving techniques](https://www.youtube.com/watch?v=g0npyaQtAQM&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO)
 6. [Fundamentals of Dynamic Programming by Avik Das](https://www.linkedin.com/learning/fundamentals-of-dynamic-programming/the-importance-of-dynamic-programming)
 
-If you found this post helpful, please consider sharing it on social media.
-Follow me for more updates and discussions on complex programming topics. Let's
-connect and grow our knowledge together!
+If you found this post helpful, please consider sharing it on social media and
+drop a like to comment. Follow me for more updates and discussions on complex
+programming topics. Let's connect and grow our knowledge together!
 
 ## License
 
