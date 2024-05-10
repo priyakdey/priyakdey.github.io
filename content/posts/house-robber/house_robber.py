@@ -80,7 +80,7 @@ class Solution:
     def rob_rec(self, nums: List[int], curr_index: int) -> int:
         """Recursive approach"""
 
-        # Guard against overshooting the array boundary and potential stackoverflow
+        # Guard against exceeding the array boundary and avoid potential stack overflow.
         if curr_index >= len(nums):
             return 0
 

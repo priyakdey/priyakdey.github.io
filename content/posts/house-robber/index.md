@@ -1,9 +1,9 @@
 +++
 title = 'Unlocking Dynamic Programming with the House Robber Challenge'
-description = 'House Robber - Dynamic Programming Problem solving from leetcode'
+description = 'Explore how dynamic programming can elegantly solve the House Robber problem, a popular challenge on LeetCode'
 date = 2024-05-10T00:47:34+05:30
 draft = false
-categories = [ "Software Engineering" ]
+categories = [ "Software Engineering", "Algorithms" ]
 tags = [ "programming", "problem solving", "datastructure", "algorithms", "dynamic programming", "recursion", "memoization", "tabulation", "leetcode", "python", "coding", "tech" ]
 showViews = true
 showLikes = true
@@ -15,8 +15,9 @@ programming can be applied to optimize solutions.
 
 ![cartoon robber trying to rob houses in a lane in night time, wearing black and white stripped clothes with a patch over his eyes](./feature-banner.png "_Image by generated [OpenArt](https://openart.ai/)_")
 
-In this blog post I will walk through my process of understanding and solving a
-problem using a dynamic programming approach, using this problem as example.
+In this blog post, I will walk through my process of understanding, breaking
+down and solving a problem using a dynamic programming approach, using House
+Robber problem as an example.
 
 ## Problem Statement
 
@@ -57,7 +58,7 @@ tree represents a decision point where you choose either to rob a house or skip
 it, leading to a new set of possibilities.
 
 By exploring all viable paths through this decision tree, you can identify the
-sequence of choices that maximizes your total haul without triggering any
+the sequence of choices that maximizes your total haul without triggering any
 alarms.
 
 ## Code Walkthrough
@@ -70,9 +71,9 @@ positions offer the highest potential rewards based on our
 inherently resembles a tree structure, making recursion a natural solution.
 
 {{< alert icon="circle-info" cardColor="#dd3946" iconColor="#f1faee" textColor="#f1faee" >}}
-Understanding recursion is crucial in tackling such problems. For a deeper dive
-into recursion, check out this
-[resource](<https://users.cs.utah.edu/~germain/PPS/Topics/recursion.html#:~:text=Recursion%20means%20%22defining%20a%20problem,%2B%20F(i%2D2)>)
+Understanding recursion is crucial for tackling such problems. For a deeper
+dive, check out this
+[resource](<https://users.cs.utah.edu/~germain/PPS/Topics/recursion.html#:~:text=Recursion%20means%20%22defining%20a%20problem,%2B%20F(i%2D2)>).
 for more details. {{< /alert >}}
 
 ```python
@@ -97,7 +98,7 @@ class Solution:
     def rob_rec(self, nums: List[int], curr_index: int) -> int:
         """Recursive approach"""
 
-        # Guard against overshooting the array boundary and potential stackoverflow
+        # Guard against exceeding the array boundary and avoid potential stack overflow.
         if curr_index >= len(nums):
             return 0
 
@@ -133,35 +134,36 @@ This solution, while straightforward, hits a **Time Limit Exceeded** error
 because it operates with an exponential time complexity O(2<sup>n</sup>) and
 O(n) stack space due to deep recursive calls.
 
-What can be done about this? This takes us to second step - caching or
-memoization(if you don't want to offend your comp soy neighbour!)
+What can be done about this? This takes us to the second step - caching or
+memoization(if you don't want to offend your comp soy neighbor!)
 
 ### Memoization
 
 [Memoization](https://en.wikipedia.org/wiki/Memoization) is a term used in
-software. It simply means, caching return value of a function based on the input
-to avoid redundant computations, significantly speeding up our solution. Well,
-there are caveats to it but that is for another day.
+software. It simply means, caching the return value of a function based on the
+input to avoid redundant computations, significantly speeding up our solution.
+While there are caveats to this approach, they will be covered in future
+discussions.
 
 ![Decision Tree](./house_robber_decision_tree-2.png)
 
 The above diagram illustrates repeated calculations in the decision tree. By
 caching these results, we avoid redundant branches and optimize our approach.
 
-As evident from the above tree, we are computing same branches or sub branches
-multiples times. If we can cache the result, it helps us optimize the solution.
-`Key-Value` based data-structure like `Map` or `Dict` in python helps us store a
-value against some key, and retrives in `O(1)` time. We can start there, but a
-closer look into the function, we can see that the function `rob_rec` has two
-inputs (other than self):
+As evident from the above tree, we are computing the same branches or
+sub-branches multiples times. If we can cache the result, it helps us optimize
+the solution. `Key-Value` based data structure like `Map` or `Dict` in Python
+helps us store a value against some key and retrieve it in `O(1)` time. We can
+start there, but a closer look into the function, we can see that the function
+`rob_rec` has two inputs (other than self):
 
 - `nums`: The actual list
-- `curr_index`: The index at which current computation will take place.
+- `curr_index`: The index at which the current computation will take place.
 
-Out of the two, only `curr_index` is the variable input and depending on it, the
-return value changes. Further more, the value of `curr_index` will be in the
+Out of the two, only `curr_index` is the variable input, and depending on it,
+the return value changes. Furthermore, the value of `curr_index` will be in the
 range `0, len(nums) - 3`; we do not need to cache the base cases. Only **one
-changing variable** should give us the hint of using a 1D array the cache.
+changing variable** should give us the hint of using a 1D array as a cache.
 
 ```python
 class Solution:
@@ -219,10 +221,10 @@ approach might further enhance performance by leveraging a
 
 What we did here is a
 [Top-Down Approach](https://en.wikipedia.org/wiki/Bottom%E2%80%93up_and_top%E2%80%93down_design),
-looking at the problem from the top, disecting it, going one level down and then
-breaking it down further. This approach works, but there is better way.
+looking at the problem from the top, dissecting it, going one level down and
+then breaking it down further. This approach works, but there is a better way.
 
-**What if we can study the cache and build it from bottom-up?**.
+**What if we can study the cache and build it from the bottom-up?**.
 
 This takes us to our next step - tabulation.
 
@@ -260,7 +262,7 @@ class Solution:
         return self.rob_tab(nums)
 
     def rob_tab(self, nums: List[int]) -> int:
-        """Bottom up approach"""
+        """Bottom-up approach"""
 
         max_loot: List[int] = [-1 for _ in nums]
         max_loot[-1] = nums[-1]
@@ -278,20 +280,20 @@ class Solution:
 
 ```
 
-We have simply renamed `cache` as `max_loot`. This method initializes a max_loot
-array where each index represents the maximum loot attainable from that house to
-the end. We start from the rightmost house and progress leftwards. The
-prev_max_loot variable tracks the maximum possible loot from two houses down,
-optimizing our loop to avoid recalculating max values continuously, using a
-sliding window technique in O(1) time.
+We have simply renamed `cache` as `max_loot`. This method initializes a
+max_loot, an array where each index represents the maximum loot attainable from
+that house to the end. We start from the rightmost house and progress leftwards.
+The prev_max_loot variable tracks the maximum possible loot from two houses
+down, optimizing our loop to avoid recalculating max values continuously, using
+a sliding window technique in O(1) time.
 
-Refer to the diagram below for illlustration.
+Refer to the diagram below for illustration.
 
 ![Tabulation Steps](./tabulation.png)
 
-From a visual approach through recursive problem-solving and memoization, we've
-constructed our solution from the ground up—tabulation. This not only clarifies
-the progression of logic but also enhances computation efficiency.
+From a visual and recursive approach, we've methodically built up to a
+tabulation solution.This not only clarifies the progression of logic but also
+enhances computation efficiency.
 
 ### Tabulation Space Optimization
 
@@ -303,13 +305,13 @@ time due to the problem's nature.
 
 If we look carefully, we can see that, for max loot at curr_index, we need to
 know which house to loot next which can be from [curr_index + 2, len(nums) - 1].
-And for next iteration, [curr_index + 1] comes into the possible jump window. So
-we can keep track of two things -
+And for the next iteration, [curr_index + 1] comes into the possible jump
+window. So we can keep track of two things -
 
 - the next index to jump to, rather the loot at the next index to jump to.
-- curr_index + 1 position loot for using it in next iteration.
+- curr_index + 1 position loot for using it in the next iteration.
 
-The final solution comes out to be..
+The final solution comes out to be...
 
 ```python
 from typing import List
@@ -340,7 +342,7 @@ class Solution:
         return self.rob_tab_with_space_optimization(nums)
 
     def rob_tab_with_space_optimization(self, nums: List[int]) -> int:
-        """Bottom up approach- Tabulation without the extra space"""
+        """Bottom-up approach- Tabulation without the extra space"""
 
         non_adjacent_max_loot, adjacent_max_loot = nums[-1], nums[-2]
 
@@ -353,7 +355,7 @@ class Solution:
 
 ```
 
-This streamlined version reduces the space complexity to `O(1)`by maintaining
+This streamlined version reduces the space complexity to `O(1)` by maintaining
 only two variables: one for the loot that includes the current house and another
 for the maximum loot of the next possible houses.
 
@@ -368,7 +370,7 @@ All code used above can be found in the file
 In this post, we explored the dynamic programming technique through the "House
 Robber" problem, evolving our approach from a simple recursive method to a more
 efficient tabulation method with space optimization. The journey through these
-methods not only enhances our problem-solving skills but also deepens our
+methods not only enhance our problem-solving skills but also deepen our
 understanding of dynamic programming concepts.
 
 I encourage you to apply these strategies to similar problems. Happy coding!
@@ -386,7 +388,7 @@ recommend the following resources:
 3. [MIT's Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/) -
    Explore algorithms at a deeper level with MIT's free course materials.
 4. [String Diff in Python By Tsoding](https://www.youtube.com/watch?v=tG4IeY01-xw)
-5. [neetcode.io youtube for visual problem-solving techniques](https://www.youtube.com/watch?v=g0npyaQtAQM&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO)
+5. [neetcode.io YouTube for visual problem-solving techniques](https://www.youtube.com/watch?v=g0npyaQtAQM&list=PLot-Xpze53lcvx_tjrr_m2lgD2NsRHlNO)
 6. [Fundamentals of Dynamic Programming by Avik Das](https://www.linkedin.com/learning/fundamentals-of-dynamic-programming/the-importance-of-dynamic-programming)
 
 If you found this post helpful, please consider sharing it on social media and
