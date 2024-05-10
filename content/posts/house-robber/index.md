@@ -404,5 +404,5 @@ non-commercial in nature, and remains unaltered.
 [MIT License](https://opensource.org/licenses/MIT). Feel free to use it in your
 projects and applications.
 
-A copy of the can be found
+A copy of the same can be found
 [here](https://github.com/priyakdey/priyakdey.github.io/blob/main/LICENSE).

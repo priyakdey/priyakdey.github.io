@@ -2,6 +2,6 @@
 - [ ] Resume Page
 - [ ] Photography Page
 - [ ] Newsletter
-- [ ] Content background, thumbnail
-- [ ] Firefox integration for likes
+- [X] Content background, thumbnail
+- [X] Firefox integration for likes
 - [ ] Firefox integration for comments
