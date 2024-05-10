@@ -7,11 +7,12 @@ categories = [ "Software Engineering" ]
 tags = [ "programming", "problem solving", "datastructure", "algorithms", "dynamic programming", "recursion", "memoization", "tabulation", "leetcode", "python", "coding", "tech" ]
 +++
 
-![cartoon robber trying to rob houses in a lane in night time, wearing black and white stripped clothes with a patch over his eyes](./banner.png "_Image by generated [OpenArt](https://openart.ai/)_")
 
 The [House Robber](https://leetcode.com/problems/house-robber/) problem from
 [LeetCode](https://leetcode.com) offers an excellent illustration of how dynamic
 programming can be applied to optimize solutions.
+
+![cartoon robber trying to rob houses in a lane in night time, wearing black and white stripped clothes with a patch over his eyes](./feature-banner.png "_Image by generated [OpenArt](https://openart.ai/)_")
 
 In this blog post I will walk through my process of understanding and solving a
 problem using a dynamic programming approach, using this problem as example.
