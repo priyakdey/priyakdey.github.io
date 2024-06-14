@@ -8,3 +8,6 @@ dist:
 
 updatetheme:
 	git submodule update --remote --merge
+
+downloadtheme:
+	git submodule update --init --recursive
