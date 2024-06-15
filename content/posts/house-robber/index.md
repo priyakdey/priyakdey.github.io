@@ -7,6 +7,7 @@ categories = [ "Software Engineering", "Algorithms" ]
 tags = [ "programming", "problem solving", "datastructure", "algorithms", "dynamic programming", "recursion", "memoization", "tabulation", "leetcode", "python", "coding", "tech" ]
 showViews = true
 showLikes = true
+showComments = true
 +++
 
 The [House Robber](https://leetcode.com/problems/house-robber/) problem from

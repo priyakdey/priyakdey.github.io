@@ -16,6 +16,7 @@ buildDrafts = false
 buildFuture = false
 
 # googleAnalytics = "G-XXXXXXXXX"
+disqusShortname = "priyakdey-com"
 
 [imaging]
   anchor = 'Center'

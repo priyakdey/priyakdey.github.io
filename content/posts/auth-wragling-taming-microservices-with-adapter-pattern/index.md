@@ -7,6 +7,7 @@ categories = [ "Clean Code", "Design Patterns", "Software Development", "Microse
 tags = [ "design patterns", "software architecture", "microservice design", "adapter pattern", "microservices", "authorization", "java", "code refactoring", "clean code", "gangs of four" ]
 showViews = true
 showLikes = true
+showComments = true
 +++
 
 In software engineering, design patterns are essential tools that help us solve
