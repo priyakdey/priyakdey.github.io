@@ -1,6 +1,6 @@
 +++
 title = 'Fontainhas - the Hidden Portugal'
-description = 'Discover the charm of Fontainhas, a quaint neighborhood in Goa reminiscent of Portugal, with its vibrant streets, colonial architecture, and rich cultural heritage.'
+description = 'Experience the vibrant streets, colonial architecture, and rich cultural heritage of Fontainhas, Goa's hidden Portuguese gem.'
 date = 2024-06-16T12:18:54Z
 draft = false
 categories = ["Travel" ]
@@ -43,19 +43,18 @@ blink; but ain’t that the beauty of solo travelling – immense and uncountabl
 unrecognised possilibilites, the unfathomable joy in seeing the unseen unfold by
 the second in front of your eyes.
 
-Fontainhas not only surprises you with cultural heritage and history, but also
-embraces you with culinary diversity and many heritage buildings turned into
-hotels and food joints, hidden well inside the labyrinth. Places like Venite,
-The Panjim Inn(generally known as The Verandah Restaurant), The Black Sheep
-Bistro and many others are places to grab a bite while in town.
+Fontainhas not only surprises you with its rich cultural heritage and history
+but also embraces you with a diverse culinary scene. As I wandered through the
+labyrinth of heritage buildings turned into cozy hotels and charming food
+joints, I felt like I was discovering hidden treasures at every corner. Places
+like Venite, The Panjim Inn(generally known as The Verandah Restaurant), The
+Black Sheep Bistro and many others are places to grab a bite while in town.
 
-{{< gallery >}} 
-    <img src="food-1.webp" class="grid-w33" />
-    <img src="food-2.webp" class="grid-w33" />
-    <img src="food-3.webp" class="grid-w33" />
-    <img src="food-4.webp" class="grid-w33" />
-    <img src="food-5.webp" class="grid-w33" /> 
-{{< /gallery >}}
+{{< gallery >}} <img src="food-1.webp" class="grid-w33" />
+<img src="food-2.webp" class="grid-w33" />
+<img src="food-3.webp" class="grid-w33" />
+<img src="food-4.webp" class="grid-w33" />
+<img src="food-5.webp" class="grid-w33" /> {{< /gallery >}}
 
 [Venite](https://www.tripadvisor.in/Restaurant_Review-g303877-d1194309-Reviews-Hospedaria_Venite-Panjim_North_Goa_District_Goa.html)
 is the place I spend most of my lunch and dinner time in; the little balcony
@@ -75,12 +74,15 @@ about perfect, but this little ‘Eden‘ inside the connundrum of daily life ma
 me skip a heart beat. Keep your backpack ready and boots cleaned, perfection
 would be followed by surprises.
 
-Lets count our age in miles that we cover.
+Let's count our age in miles that we cover.
 
-The best part of travelling solo is waving hello as strangers on the way and
-call them friends; thanks Richard for the drink and hope to cross paths soon and
-hear all your travel stories over a drink. Untill next time, have a safe trip
-mate…….
+The best part of traveling solo is waving hello to strangers along the way and
+calling them friends. Thanks, Richard, for the drink, and I hope to cross paths
+again soon to hear all your travel stories over a drink. Until next time, have a
+safe trip, mate!
+
+**Have you been to Fontainhas or have a favorite travel destination? Share your
+stories and tips in the comments below!**
 
 ## License
 
