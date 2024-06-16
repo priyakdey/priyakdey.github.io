@@ -2,9 +2,12 @@
 title = 'Fontainhas - the Hidden Portugal'
 description = 'Discover the charm of Fontainhas, a quaint neighborhood in Goa reminiscent of Portugal, with its vibrant streets, colonial architecture, and rich cultural heritage.'
 date = 2024-06-16T12:18:54Z
-draft = true
+draft = false
 categories = ["Travel" ]
 tags = [ "goa", "india", "travel", "fontainhas", "portugal", "culture", "heritage", "architecture", "photography" ]
+showViews = true
+showLikes = true
+showComments = true
 +++
 
 Amidst the hectic life of the capital, hides she, draped in vibrant colors, set
@@ -65,7 +68,7 @@ the walls of this place is ……..)
 
 ![Panjim Church](./panjim-church.webp "_Panjim Church_")
 
-![Staricase showcasing colors and vibes of Fonatainhas](./panjim-church.webp "_Colorful Journey_")
+![Staricase showcasing colors and vibes of Fonatainhas](./stairs.webp "_Colorful Journey_")
 
 People keep asking,”What would be perfect weekend getaway”. Well I dont know
 about perfect, but this little ‘Eden‘ inside the connundrum of daily life made
