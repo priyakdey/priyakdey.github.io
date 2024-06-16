@@ -16,6 +16,18 @@
   weight = 10
 
 [[main]]
+  name = "Software Engineering"
+  parent = "Posts"
+  pageRef = "posts/software"
+  weight = 10
+
+[[main]]
+  name = "Travel Stories"
+  parent = "Posts"
+  pageRef = "posts/travel"
+  weight = 10
+
+[[main]]
   name = "Photogpraphy"
   pageRef = "photography"
   weight = 20
