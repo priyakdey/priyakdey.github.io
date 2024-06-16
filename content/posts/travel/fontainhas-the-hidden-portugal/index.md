@@ -1,6 +1,6 @@
 +++
 title = 'Fontainhas - the Hidden Portugal'
-description = 'Experience the vibrant streets, colonial architecture, and rich cultural heritage of Fontainhas, Goa's hidden Portuguese gem.'
+description = "Experience the vibrant streets, colonial architecture, and rich cultural heritage of Fontainhas, Goa's hidden Portuguese gem."
 date = 2024-06-16T12:18:54Z
 draft = false
 categories = ["Travel" ]
