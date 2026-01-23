@@ -75,6 +75,7 @@ highlightCurrentMenuArea = true
   showWordCount = false
   sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
   showZenMode = false 
+  math = true
 
 [list]
   showHero = false

@@ -33,11 +33,19 @@ showAuthor = false
     </thead>
     <tbody>
         <tr>
+            <td><img class="customEntitityLogo" src="capital-one.png"/></td>
+            <td><a href="https://www.capitalone.com/" target="_blank">Capital One</a></td>
+            <td>Lead Software Engineer</td>
+            <td>ML Platform Engineering</td>
+            <td>Jan, 2026 - <i>Present</i></td>
+            <td>Bangalore, India</td>
+        </tr>
+        <tr>
             <td><img class="customEntitityLogo" src="visa.webp"/></td>
             <td><a href="https://www.visa.co.in/" target="_blank">Visa Inc.</a></td>
             <td>Staff Software Engineer</td>
             <td><a href="https://authorize.net" target="_blank">Authorize.net</a></td>
-            <td>May, 2024 - Present</td>
+            <td>May, 2024 - Jan, 2026</td>
             <td>Bangalore, India</td>
         </tr>
         <tr>
@@ -51,7 +59,7 @@ showAuthor = false
         <tr>
             <td><img class="customEntitityLogo" src="morgan-stanley.webp"/></td>
             <td><a href="https://www.morganstanley.com/" target="_blank">Morgan Stanley</a></td>
-            <td>Manager (Technical Lead)</td>
+            <td>Software Engineering Manager</td>
             <td>Corporate Retirement Plan (401K)</td>
             <td>Jun, 2021 - Oct, 2022</td>
             <td>Bangalore, India</td>
@@ -60,14 +68,15 @@ showAuthor = false
             <td><img class="customEntitityLogo" src="publicis-sapient.webp"/></td>
             <td><a href="https://www.publicissapient.com/" target="_blank">Publicis Sapient</a></td>
             <td>Senior Associate</td>
+            <td>Corporate Retirement Plan (401K)</td>
             <td>May, 2022 - Jun, 2021</td>
             <td>Bangalore, India</td>
         </tr>
         <tr>
             <td><img class="customEntitityLogo" src="tech-mahindra.webp"/></td>
             <td><a href="https://www.techmahindra.com/" target="_blank">Tech Mahindra</a></td>
-            <td>British Telecom</td>
             <td>Senior Software Engineer</td>
+            <td>British Telecom</td>
             <td>Apr, 2019 - Sep, 2019</td>
             <td>Pune, India</td>
         </tr>
