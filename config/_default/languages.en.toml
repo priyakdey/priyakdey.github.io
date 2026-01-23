@@ -20,7 +20,7 @@ image = "img/priyakdey.png"
 headline = "Code and Wander: Journeys in Code, Camera, and the Quest for Meaning"
 bio = "Code and Wander: Journeys in Code, Camera, and the Quest for Meaning"
 links = [
-     { email = "mailto:reaching@priyakdey.com" },
+     { email = "mailto:reach@priyakdey.com" },
      { github = "https://github.com/priyakdey/" },
      { linkedin = "https://linkedin.com/in/priyakdey/" },
      { stack-overflow = "https://stackoverflow.com/users/10368507/priyak-dey/" },
@@ -28,6 +28,7 @@ links = [
      { flickr = "https://www.flickr.com/photos/114379474@N04/" },
      { facebook = "https://www.facebook.com/priyak.dey/" },
      { x-twitter = "https://twitter.com/DeyPriyak" },
+     { youtube = "https://www.youtube.com/@priyak1991dey" },
 
 #     { twitter = "https://twitter.com/DeyPriyak" },
 #     { link = "https://link-to-some-website.com/" },
