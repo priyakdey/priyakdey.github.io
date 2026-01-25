@@ -17,7 +17,6 @@ buildDrafts = false
 buildFuture = false
 
 # googleAnalytics = "G-XXXXXXXXX"
-disqusShortname = "priyakdey-com"
 
 [imaging]
   anchor = 'Center'
@@ -65,3 +64,8 @@ disqusShortname = "priyakdey-com"
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[services]
+  [services.disqus]
+    shortname = 'priyakdey-com'
+
